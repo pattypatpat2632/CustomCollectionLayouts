@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		EC90287C1EC3460400027FCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC90287B1EC3460400027FCE /* AppDelegate.swift */; };
-		EC90287E1EC3460400027FCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC90287D1EC3460400027FCE /* ViewController.swift */; };
 		EC9028811EC3460400027FCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC90287F1EC3460400027FCE /* Main.storyboard */; };
 		EC9028831EC3460400027FCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC9028821EC3460400027FCE /* Assets.xcassets */; };
 		EC9028861EC3460400027FCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9028841EC3460400027FCE /* LaunchScreen.storyboard */; };
 		EC9028911EC3460400027FCE /* CustomLayoutsPratciceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9028901EC3460400027FCE /* CustomLayoutsPratciceTests.swift */; };
 		EC90289C1EC3460400027FCE /* CustomLayoutsPratciceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC90289B1EC3460400027FCE /* CustomLayoutsPratciceUITests.swift */; };
+		EC9028AA1EC3491A00027FCE /* CustomCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9028A91EC3491A00027FCE /* CustomCollectionVC.swift */; };
+		EC9028AC1EC3496000027FCE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9028AB1EC3496000027FCE /* CustomCell.swift */; };
+		EC9028AE1EC349FE00027FCE /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9028AD1EC349FE00027FCE /* UIColorExtension.swift */; };
+		EC9028B01EC34B6100027FCE /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9028AF1EC34B6100027FCE /* CustomLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		EC9028781EC3460400027FCE /* CustomLayoutsPratcice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomLayoutsPratcice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC90287B1EC3460400027FCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC90287D1EC3460400027FCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC9028801EC3460400027FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC9028821EC3460400027FCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC9028851EC3460400027FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		EC9028971EC3460400027FCE /* CustomLayoutsPratciceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomLayoutsPratciceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC90289B1EC3460400027FCE /* CustomLayoutsPratciceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayoutsPratciceUITests.swift; sourceTree = "<group>"; };
 		EC90289D1EC3460400027FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC9028A91EC3491A00027FCE /* CustomCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionVC.swift; sourceTree = "<group>"; };
+		EC9028AB1EC3496000027FCE /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		EC9028AD1EC349FE00027FCE /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		EC9028AF1EC34B6100027FCE /* CustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				EC90287B1EC3460400027FCE /* AppDelegate.swift */,
-				EC90287D1EC3460400027FCE /* ViewController.swift */,
 				EC90287F1EC3460400027FCE /* Main.storyboard */,
+				EC9028AB1EC3496000027FCE /* CustomCell.swift */,
+				EC9028A91EC3491A00027FCE /* CustomCollectionVC.swift */,
 				EC9028821EC3460400027FCE /* Assets.xcassets */,
 				EC9028841EC3460400027FCE /* LaunchScreen.storyboard */,
 				EC9028871EC3460400027FCE /* Info.plist */,
+				EC9028AD1EC349FE00027FCE /* UIColorExtension.swift */,
+				EC9028AF1EC34B6100027FCE /* CustomLayout.swift */,
 			);
 			path = CustomLayoutsPratcice;
 			sourceTree = "<group>";
@@ -262,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC90287E1EC3460400027FCE /* ViewController.swift in Sources */,
 				EC90287C1EC3460400027FCE /* AppDelegate.swift in Sources */,
+				EC9028B01EC34B6100027FCE /* CustomLayout.swift in Sources */,
+				EC9028AC1EC3496000027FCE /* CustomCell.swift in Sources */,
+				EC9028AA1EC3491A00027FCE /* CustomCollectionVC.swift in Sources */,
+				EC9028AE1EC349FE00027FCE /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
